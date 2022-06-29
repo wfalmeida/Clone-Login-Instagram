@@ -173,7 +173,7 @@ body {
     justify-content: center;
     height: 60px;
     font-size: 0.875rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .login .register a {
@@ -191,7 +191,8 @@ body {
 }
 
 .login .get-app span {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
 }
 
 .login .get-app .options-download {
