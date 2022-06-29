@@ -1,5 +1,5 @@
 # Clone da página de login do Instagram
-
+## Criação de um clone da tela de login do Instagram utilizando HTML5 e CSS3
 * Flexbox CSS
 * Pseudo-classes e Pseudo-elements
 * Responsividade (Media Query, medidas dinâmicas)
