@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 935px;
+    width: 100%;
+    margin: 2rem auto 0;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    height: 615px;
+}
+
+.container .phone-image {
+    width: 40%;
+    margin: 0 2rem 0 0.725rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.container .phone-image img {
+    height: 100%;
+}
+
+.container .login {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    min-width: 350px;
+    margin-top: 0.725rem;
+    width: 35%;
+}
+
+.container .login .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+
+.form-container, .register {
+    background-color: #FFF;
+    border: 1px solid #dbdbdb;
+}
+
+.form-container .logo-instagram {
+    margin: 2rem 0;
+}
+
+.form-container .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+}
+
+.form-container .form input {
+    height: 35px;
+    width: 100%;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 9px 0 7px 8px;
+    outline: none;
+}
+
+.form-container .form button {
+    background-color: #0095f6;
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #FFF;
+    border-radius: 3px;
+    margin-bottom: 1.2rem;;
+}
+
+.form-container .form button:disabled {
+    opacity: 0.3;
+}
+
+.form-container .form input:nth-child(1) {
+    margin-bottom: .5rem;
+}
+
+.form-container .form input:nth-child(2) {
+    margin-bottom: 1rem;
+}
+
+.form-container .form input::placeholder{
+    font-size: 0.8rem;
+}
+
+.form-container .form input:focus {
+    border: 1px solid #a8a8a8;
+}
+
+.form-container span {
+    font-weight: 600;
+    color: #8e8e8e;
+    font-size: .8rem;
+    margin-bottom: 2rem;
+}
+
+.form-container span:before {
+    content: '';
+    display: inline-flex;
+    text-align: left;
+    width: 120px;
+    height: 1.5px;
+    background: #dbdbdb;
+    margin-right: .5rem;
+    vertical-align: middle;
+}
+.form-container span:after {
+    content: '';
+    display: inline-flex;
+    width: 110px;
+    height: 1.5px;
+    background: #dbdbdb;
+    margin-left: .5rem;
+    vertical-align: middle;
+}
+
+.form-container a {
+    text-decoration: none;
+}
+
+.form-container .login-facebook {
+    display: flex;
+    align-items: center;
+    color: #385185;
+    margin-bottom: 1rem;
+}
+.form-container .login-facebook a {
+    padding-top: .1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.form-container .login-facebook svg {
+    margin-right: .5rem;
+}
+
+.form-container .password-rescue {
+    font-size: 0.875rem;
+}
+
+.login .register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.login .register a {
+    text-decoration: none;
+    color: #0095f6;
+    font-weight: 700;
+}
+
+.login .get-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login .get-app span {
+    margin-bottom: 3rem;
+}
+
+.login .get-app .options-download {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.login .get-app .options-download a {
+    height: 3rem;
+    width: 9rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.login .get-app a:nth-child(1) {
+    margin-right: .5rem;
+    background-image: url("assets/img/apple-button.png");
+}
+
+.login .get-app a:nth-child(2) {
+    background-image: url("assets/img/googleplay-button.png");
+}
+
+
+@media screen and (max-width: 875px) {
+    .phone-image {
+        display: none !important;
+        background-color: #000;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .login {
+        min-width: 100% !important;
+    }
+    .form-container, .register {
+        background-color: transparent;
+        border: none;
+    }
+}
